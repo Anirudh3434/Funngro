@@ -28,7 +28,7 @@ function NavBar({method}) {
 
             <div className={`links ${isNavOpen ? 'active' : ''}`}>
                 <a href='/'>Teen</a>
-                <a href='/company'>Company</a>
+                <Link to='company'>Company</Link>
                 <a href='#'>Parent</a>
                 <a href="#" className='app'><GrAndroid /></a>
                 <a href="#" className='app1'><FaApple /></a>
