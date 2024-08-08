@@ -3,6 +3,7 @@ import logo from '../assets/Logo.png';
 import { GrAndroid } from "react-icons/gr";
 import { FaApple } from "react-icons/fa";
 import { FaLongArrowAltRight, FaBars, FaTimes } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 function NavBar({method}) {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -27,9 +28,9 @@ function NavBar({method}) {
             </button>
 
             <div className={`links ${isNavOpen ? 'active' : ''}`}>
-                <a href='/'>Teen</a>
+                <Link href='/'>Teen</Link>
                 <Link to='company'>Company</Link>
-                <a href='#'>Parent</a>
+               
                 <a href="#" className='app'><GrAndroid /></a>
                 <a href="#" className='app1'><FaApple /></a>
                 <button onClick={handleLogin}>Company Login <FaLongArrowAltRight/></button>
